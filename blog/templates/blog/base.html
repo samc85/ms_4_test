@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>{% block title %}{% endblock %}</title>
-        <!-- <link href="{% static 'css/blog.css' %}" rel="stylesheet"> -->
+         <link href="{% static 'css/blog.css' %}" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
 
@@ -43,11 +43,12 @@
   <div class="product-device shadow-sm d-none d-md-block"></div>
   <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
-  <div class="container marketing">
+  
             {% block content %}
+<div class="container marketing"></div>
             {% endblock %}
        
-        </div>
+       
       
         
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
