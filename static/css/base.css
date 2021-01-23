@@ -1,5 +1,9 @@
-/* --- background image for banner */
 
-.background-image {
-    background-image: url("media/elephant.jpg");
+
+/* --- background image for banner    url("/media/elephant.jpg") no-repeat center center fixed. */
+
+#background-image {
+    background:url("/workspace/ms_4_test/media/elephant.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
 }
