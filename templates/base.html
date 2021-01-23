@@ -4,7 +4,7 @@
     <head>
         {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        <link rel="stylesheet" href="{% static '/css/base.css' %}" />
         {% endblock %}
 
         <title>MS4 test</title>
@@ -32,14 +32,16 @@
     </nav>
 
     <body>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center w-105" id="background-image">
+        <div class ="background-image">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center w-105">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
                 <h1 class="display-4 font-weight-normal">Punny headline</h1>
-                <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-                <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+                <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts</p>
+                <a class="btn btn-outline-secondary" href="#">Shop now</a>
             </div>
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
         </div>
 
         {% block content %}

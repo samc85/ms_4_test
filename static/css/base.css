@@ -1,9 +1,26 @@
-
+html {
+    height: 100%;
+}
 
 /* --- background image for banner    url("/media/elephant.jpg") no-repeat center center fixed. */
 
-#background-image {
-    background:url("/workspace/ms_4_test/media/elephant.jpg") no-repeat center center fixed;
+.background-image {
+    background: url("/media/elephant.jpg") no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    color: lightskyblue;
 }
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+
+
+
